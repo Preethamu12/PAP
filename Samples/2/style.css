@@ -144,6 +144,7 @@ header #menu-bar{
     animation: animte 1s linear 1;
 }
 
+
 @keyframes animte{
     0%{
         transform:rotate(45deg) translateY(-40rem);
