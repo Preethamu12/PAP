@@ -78,6 +78,13 @@ var swiper = new Swiper(".review-slider", {
   },
 });
 
+document.querySelector("#show-login").addEventListener("click",function(){
+  document.querySelector(".popup").classList.add("active");
+});
+document.querySelector(".popup .close-btn").addEventListener("click",function(){
+  document.querySelector(".popup").classList.remove("active");
+});
+
 function loader(){
   document.querySelector('.loader-container').classList.add('fade-out');
 }
