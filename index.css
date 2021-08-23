@@ -20,6 +20,8 @@
     opacity:0;
 }
 .card{
-  width:75%;
-
+  width: 75%;
+}
+h5, .price{
+  text-align:center;
 }
