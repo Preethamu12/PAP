@@ -68,7 +68,7 @@ h5, .price{
 }
 
 .menu .menu-content a {
-  padding: 2px;
+  padding: 10px;
 
   background: #fff;
   position: relative;
@@ -83,4 +83,9 @@ h5, .price{
   z-index: 3;
   padding: 0 10px;
   font-weight: 600;
+}
+
+
+#contact-title{
+  text-align: center;
 }
