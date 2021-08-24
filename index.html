@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css " rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="C:\Users\azhan\OneDrive\Documents\GitHub\PAP\index.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="index.css">
   <title>PAP project</title>
@@ -33,10 +33,10 @@
                 Menu
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#Breakfast">Breakfast</a></li>
-                <li><a class="dropdown-item" href="#Lunch">Lunch</a></li>
-                <li><a class="dropdown-item" href="#Dinner">Dinner</a></li>
-                <li><a class="dropdown-item" href="#Dessert">Desserts</a></li>
+                <li><a class="dropdown-item" href="#breakfast">Breakfast</a></li>
+                <li><a class="dropdown-item" href="#lunch">Lunch</a></li>
+                <li><a class="dropdown-item" href="#dinner">Dinner</a></li>
+                <li><a class="dropdown-item" href="#dessert">Desserts</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -56,7 +56,7 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacts</a>
+              <a class="nav-link" href="contact.html">Contacts</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -68,12 +68,9 @@
           <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
         </div>
         <div class="mx-2">
-          <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#bellModal"><i class="bi bi-bell"
-            style="font-size: 2rem; color: orange;"></i></button>
-        <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#cartModal"><i
-            class="bi bi-cart-plus-fill" style="font-size: 2rem; color: orange;"></i></button>
-        <button class="btn btn-light"><i class="bi bi-person-circle"
-            style="font-size: 2rem; color: orange;"></i></button>
+          <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#bellModal"><i class="bi bi-bell" style="font-size: 2rem; color: orange;"></i></button>
+          <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#cartModal"><i class="bi bi-cart-plus-fill" style="font-size: 2rem; color: orange;"></i></button>
+          <button class="btn btn-light"><i class="bi bi-person-circle" style="font-size: 2rem; color: orange;"></i></button>
         </div>
       </div>
     </nav>
@@ -216,8 +213,9 @@
             <div class="navbar-cart-product">
               <div class="d-flex align-items-center"><img class="img-fluid navbar-cart-product-image" width="150" height="150" src="Break1.jfif" alt="..."></a>
                 <div class="w-100"><a class="btn  float-end" href="#"><i class="fa fa-times"> </i></a>
-                  <div class="ps-3"> <a class="navbar-cart-product-link">Bread Upma
-                      Blouse</a><small class="d-block text-muted">Quantity: 1 </small><strong class="d-block text-sm"><i class="fas fa-rupee-sign"></i>80.00 </strong></div>
+                  <div class="ps-3"> <a class="navbar-cart-product-link">Bread Upma</a>
+                    <small class="d-block text-muted">Quantity: 1 </small><strong class="d-block text-sm"><i class="fas fa-rupee-sign"></i>80.00 </strong>
+                  </div>
                 </div>
               </div>
             </div>
@@ -302,187 +300,404 @@
 
 
     <!--Menu start-->
-    <section class="container-sm  mt-3 menu">
-      <div class="">
-        <h3 style="text-align:center">Our Menu</h3>
+    <section id="menu" class="menu">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 style="text-align:center"><span>Menu</span></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active">Show All</li>
+              <li data-filter=".filter-Bf">Breakfast</li>
+              <li data-filter=".filter-Lch">Lunch</li>
+              <li data-filter=".filter-Din">Dinner</li>
+              <li data-filter=".filter-Dst">Desserts</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container">
+
+          <div class="col-lg-6 menu-item filter-Bf">
+            <div class="menu-content">
+
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Breakfast" id="breakfast">
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Break1.jpeg" class="card-img-top" alt="Dessert1"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Gulab Jamun</h5>
+                      <div class="price">Rs 40.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Break1.jpeg" class="card-img-top" alt="Dessert2"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Fruit Custard</h5>
+                      <div class="price">Rs 60.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Break1.jpeg" class="card-img-top" alt="Dessert3"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate Ice-Cream</h5>
+                      <div class="price">Rs 50.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Lch">
+            <div class="menu-content">
+
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Lunch" id="lunch">
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Lunch1.jpeg" class="card-img-top" alt="Dessert1"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Gulab Jamun</h5>
+                      <div class="price">Rs 40.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Lunch1.jpeg" class="card-img-top" alt="Dessert2"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Fruit Custard</h5>
+                      <div class="price">Rs 60.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Lunch1.jpeg" class="card-img-top" alt="Dessert3"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate Ice-Cream</h5>
+                      <div class="price">Rs 50.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Bf">
+            <div class="menu-content">
+
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Breakfast" id="breakfast">
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Break1.jpeg" class="card-img-top" alt="Dessert1"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Gulab Jamun</h5>
+                      <div class="price">Rs 40.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Break1.jpeg" class="card-img-top" alt="Dessert2"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Fruit Custard</h5>
+                      <div class="price">Rs 60.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Break1.jpeg" class="card-img-top" alt="Dessert3"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate Ice-Cream</h5>
+                      <div class="price">Rs 50.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Lch">
+            <div class="menu-content">
+
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Lunch" id="lunch">
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Lunch1.jpeg" class="card-img-top" alt="Dessert1"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Gulab Jamun</h5>
+                      <div class="price">Rs 40.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Lunch1.jpeg" class="card-img-top" alt="Dessert2"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Fruit Custard</h5>
+                      <div class="price">Rs 60.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Lunch1.jpeg" class="card-img-top" alt="Dessert3"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate Ice-Cream</h5>
+                      <div class="price">Rs 50.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Din">
+            <div class="menu-content">
+
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Dinner" id="dinner">
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dinner1.jpeg" class="card-img-top" alt="Dessert1"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Gulab Jamun</h5>
+                      <div class="price">Rs 40.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dinner1.jpeg" class="card-img-top" alt="Dessert2"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Fruit Custard</h5>
+                      <div class="price">Rs 60.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dinner1.jpeg" class="card-img-top" alt="Dessert3"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate Ice-Cream</h5>
+                      <div class="price">Rs 50.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Dst">
+            <div class="menu-content">
+
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Desserts" id="dessert">
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dessert1.jpeg" class="card-img-top" alt="Dessert1"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Gulab Jamun</h5>
+                      <div class="price">Rs 40.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dessert1.jpeg" class="card-img-top" alt="Dessert2"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Fruit Custard</h5>
+                      <div class="price">Rs 60.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dessert1.jpeg" class="card-img-top" alt="Dessert3"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate Ice-Cream</h5>
+                      <div class="price">Rs 50.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Din">
+            <div class="menu-content">
+
+
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Dinner" id="dinner">
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dinner1.jpeg" class="card-img-top" alt="Dessert1"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Gulab Jamun</h5>
+                      <div class="price">Rs 40.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dinner1.jpeg" class="card-img-top" alt="Dessert2"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Fruit Custard</h5>
+                      <div class="price">Rs 60.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dinner1.jpeg" class="card-img-top" alt="Dessert3"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate Ice-Cream</h5>
+                      <div class="price">Rs 50.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-Dst">
+            <div class="menu-content">
+
+
+              <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Desserts" id="dessert">
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dessert1.jpeg" class="card-img-top" alt="Dessert1"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Gulab Jamun</h5>
+                      <div class="price">Rs 40.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dessert1.jpeg" class="card-img-top" alt="Dessert2"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Fruit Custard</h5>
+                      <div class="price">Rs 60.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <a href="#"><img src="C:\Users\ASUS\OneDrive\Desktop\Dessert1.jpeg" class="card-img-top" alt="Dessert3"></a>
+                    <div class="card-body">
+                      <h5 class="card-title">Chocolate Ice-Cream</h5>
+                      <div class="price">Rs 50.00</div>
+                      <a href="#">
+                        <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
       </div>
-
-      <div style="text-align:center" id="menu">
-        <button data-filter=".Breakfast" type="button" class="btn btn-outline-warning active">Breakfast</button>
-        <button data-filter=".Lunch" type="button" class="btn btn-outline-success">Lunch</button>
-        <button data-filter=".Dinner" type="button" class="btn btn-outline-dark">Dinner</button>
-        <button data-filter=".Desserts" type="button" class="btn btn-outline-danger">Desserts</button>
-      </div>
-
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3  Breakfast">
-        <div class="col">
-          <div class="card">
-            <a href="#"><img src="break1.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Bread Upma</h5>
-              <div class="price">Rs 80.00</div>
-              <a href="#">
-                <div style="text-align:center"><button type="button" class="btn btn-outline-warning">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="#"><img src="break2.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Paneer Cheese Toast</h5>
-              <div class="price">Rs 100.00</div>
-              <a href="#">
-                <div style="text-align:center"><button type="button" class="btn btn-outline-warning">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="#"> <img src="C:\Users\azhan\OneDrive\Documents\GitHub\PAP\resize-16297895431776262368poorimasalakizhangu.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Poori</h5>
-              <div class="price">Rs 50.00</div>
-              <a href="#">
-                <div style="text-align:center"><button type="button" class="btn btn-outline-warning">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Lunch">
-        <div class="col">
-          <div class="card">
-            <a href="#"> <img src="C:\Users\azhan\OneDrive\Documents\GitHub\PAP\curd-rice--1024x703.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Curd Rice</h5>
-              <div class="price">Rs 60.00</div>
-              <a href="#">
-                <div style="text-align:center"><button class="btn btn-outline-success">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="#"> <img src="C:\Users\azhan\OneDrive\Documents\GitHub\PAP\1606130153_HyderabadiChickenBiryani.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Chicken Biriyani</h5>
-              <div class="price">Rs 130.00</div>
-              <a href="#">
-                <div style="text-align:center"><button class="btn btn-outline-success">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="#"><img src="C:\Users\azhan\OneDrive\Documents\GitHub\PAP\ET-afghani-paneer.jpg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Paneer Biriyani</h5>
-              <div class="price">Rs 100.00</div>
-              <a href="#">
-                <div style="text-align:center"><button class="btn btn-outline-success">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Dinner">
-        <div class="col">
-          <div class="card">
-            <a href="#"><img src="Dinner1.jpeg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Paneer Fried Rice</h5>
-              <div class="price">Rs 80.00</div>
-              <a href="#">
-                <div style="text-align:center"><button type="button" class="btn btn-outline-dark">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="#"><img src="Dinner2.jpeg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Rajma Chawal</h5>
-              <div class="price">Rs 100.00</div>
-              <a href="#">
-                <div style="text-align:center"><button type="button" class="btn btn-outline-dark">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="#"><img src="Dinner3.jpeg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">South Indian Thali</h5>
-              <div class="price">Rs 140.00</div>
-              <a href="#">
-                <div style="text-align:center"><button class="btn btn-outline-dark">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Desserts">
-        <div class="col">
-          <div class="card">
-            <a href="#"><img src="Dessert1.jpeg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Gulab Jamun</h5>
-              <div class="price">Rs 40.00</div>
-              <a href="#">
-                <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="#"><img src="Dessert2.jpeg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Fruit Custard</h5>
-              <div class="price">Rs 60.00</div>
-              <a href="#">
-                <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <a href="#"><img src="Dessert3.jpeg" class="card-img-top" alt="..."></a>
-            <div class="card-body">
-              <h5 class="card-title">Chocolate Ice-Cream</h5>
-              <div class="price">Rs 50.00</div>
-              <a href="#">
-                <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
     </section>
     <!--Menu end-->
 
     <!--loader part  -->
-    <!--div class="loader-container">
-    <img src="loader.gif" alt="">
-</div>
+    <div class="loader-container">
+      <img src="loader.gif" alt="">
+    </div>
 
 
-  <!-- Optional JavaScript; choose one of the two! -->
-
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
@@ -492,7 +707,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
     -->
 
-    <script src="index.js" alt=""></script>
+
     <script src="index.js" alt=""></script>
 
 </body>
