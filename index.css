@@ -68,7 +68,8 @@ h5, .price{
 }
 
 .menu .menu-content a {
-  padding-right: 10px;
+  padding: 2px;
+
   background: #fff;
   position: relative;
   z-index: 3;
