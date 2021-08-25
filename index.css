@@ -20,7 +20,7 @@
     opacity:0;
 }
 
-h5, .price{
+h5, .price,.col-md-6, .col-12, .col-mt-6, .form-check{
   text-align:center;
 }
 

@@ -56,7 +56,7 @@
               <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contacts</a>
+              <a class="nav-link" href="#contact">Contact Us</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -299,7 +299,7 @@
     <!--Carousel end-->
 
 
-    
+
 
 
     <!--Menu start-->
@@ -377,8 +377,8 @@
                   <div class="card">
                     <a href="#"><img src="Lunch1.jpg" class="card-img-top" alt="Dessert1"></a>
                     <div class="card-body">
-                      <h5 class="card-title">Gulab Jamun</h5>
-                      <div class="price">Rs 40.00</div>
+                      <h5 class="card-title">Curd Rice</h5>
+                      <div class="price">Rs 60.00</div>
                       <a href="#">
                         <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
                       </a>
@@ -389,8 +389,8 @@
                   <div class="card">
                     <a href="#"><img src="Lunch2.jpg" class="card-img-top" alt="Dessert2"></a>
                     <div class="card-body">
-                      <h5 class="card-title">Fruit Custard</h5>
-                      <div class="price">Rs 60.00</div>
+                      <h5 class="card-title">Chicken Biriyani</h5>
+                      <div class="price">Rs 130.00</div>
                       <a href="#">
                         <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
                       </a>
@@ -401,8 +401,8 @@
                   <div class="card">
                     <a href="#"><img src="Lunch3.jpeg" class="card-img-top" alt="Dessert3"></a>
                     <div class="card-body">
-                      <h5 class="card-title">Chocolate Ice-Cream</h5>
-                      <div class="price">Rs 50.00</div>
+                      <h5 class="card-title">North-Indian Thali</h5>
+                      <div class="price">Rs 150.00</div>
                       <a href="#">
                         <div style="text-align:center"><button class="btn btn-outline-danger">Add</button></div>
                       </a>
@@ -693,26 +693,83 @@
     </section>
     <!--Menu end-->
 
-    <!--Contact Start-->
+    <!--Contact Us Start-->
     <div class="container my-4" id="contact">
       <h2 id="contact-title">Contact Us</h2>
-      <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <!-- Map start -->
+      <div class="map">
+        <iframe style="border:0; width: 100%; height: 350px;"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9701.40525491365!2d74.79278427549143!3d13.019844171121154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba352113ffb7753%3A0x55748a891457f561!2sSrinivas%20University!5e0!3m2!1sen!2sin!4v1629867321798!5m2!1sen!2sin"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- Map end -->
+
+      <div class="container mt-5">
+        <!--our info start-->
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>A108 Adam Street<br>New York, NY 535022</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-clock"></i>
+              <h4>Open Hours:</h4>
+              <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>info@example.com<br>contact@example.com</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
+            </div>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">specify your Query</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">
-            Are you an member?
-          </label>
-        </div>
-        <button class="btn btn-primary">Submit</button>
+        <!--our info End-->
+
+        <!--Feedback form start-->
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="inputName4" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="inputName4" required>
+             </div>
+             <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputSubject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="inputSubject">
+            </div>
+            <div class="col-mt-6">
+              <label for="inputMessage" class="form-label">Message</label>
+              <textarea class="form-control" name="message" rows="5"  id="inputMessage" required></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                I'm Already a Member
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+
+      </div>
+
     </div>
-    <!--Contact Start-->
+    <!--Contact Us End-->
 
     <!--loader part  -->
     <!--div class="loader-container">
