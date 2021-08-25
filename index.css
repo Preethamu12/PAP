@@ -1,27 +1,28 @@
-.loader-container{
-    position: fixed;
-    top:0; left:0;
-    height:100%;
-    width:100%;
-    z-index: 10000;
-    background:#fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.loader-container img{
-    width:35rem;
+.loader-container img {
+  width: 35rem;
 }
 
-.loader-container.fade-out{
-    top:-110%;
-    opacity:0;
+.loader-container.fade-out {
+  top: -110%;
+  opacity: 0;
 }
 
-h5, .price,.col-md-6, .col-12, .col-mt-6, .form-check{
-  text-align:center;
+h5, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
+  text-align: center;
 }
 
 .menu #menu-flters li {
@@ -57,7 +58,6 @@ h5, .price,.col-md-6, .col-12, .col-mt-6, .form-check{
 }
 
 .menu .menu-content::after {
-
   position: absolute;
   left: 20px;
   right: 0;
@@ -69,7 +69,6 @@ h5, .price,.col-md-6, .col-12, .col-mt-6, .form-check{
 
 .menu .menu-content a {
   padding: 10px;
-
   background: #fff;
   position: relative;
   z-index: 3;
@@ -85,13 +84,19 @@ h5, .price,.col-md-6, .col-12, .col-mt-6, .form-check{
   font-weight: 600;
 }
 
-
-#contact-title{
+#contact-title {
   text-align: center;
 }
-.card{border-radius: 7px;
-background: #fff;
-border: 1px solid rgb(255 255 255);}
+
+.card {
+  padding: 9px;
+  width: 210px;
+  height: 298px;
+  border-radius: 10px;
+  background: #fff;
+  border: 1px solid rgb(255 255 255);
+}
 
 .card-img, .card-img-top {
-      border-radius: 7px;}
+  border-radius: 7px;
+}
