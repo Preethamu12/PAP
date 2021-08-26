@@ -28,7 +28,13 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
+            </li>
+          <!--  <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Menu
               </a>
@@ -51,9 +57,12 @@
                 </li>
                 <li><a class="dropdown-item" href="#">Reviews</a></li>
               </ul>
+            </li>-->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Review</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact Us</a>
@@ -297,6 +306,44 @@
     </section>
     <!--Carousel end-->
 
+    <!--About start-->
+    <section class="about" id="about">
+
+        <h3 class="sub-heading"> about us </h3>
+        <h1 class="heading"> why choose us? </h1>
+
+        <div class="row" style="margin-bottom: 50px">
+
+            <div class="image" style="width:100%">
+                <img src="about-img.png" alt="">
+            </div>
+
+            <div class="content">
+                <h3>best food in the town</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,corrupti corporis quaerat voluptatem ipsam neque labore modi autem, saepe numquam quod reprehenderit rem? Tempora aut soluta odio corporis nihil!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nemo. Sit porro illo eos cumque deleniti iste alias, eum natus.</p>
+                <!--<div class="icons-container">
+                    <div class="icons">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>free delivery</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>easy payments</span>
+                    </div>
+                    <div class="icons">
+                        <i class="fas fa-headset"></i>
+                        <span>24/7 service</span>
+                    </div>
+                </div>
+                <a href="#" class="btn">learn more</a>-->
+            </div>
+
+        </div>
+
+    </section>
+    <!-- about section ends -->
+
 
 
 
@@ -313,7 +360,7 @@
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
               <li data-filter="*" class="filter-active">Show All</li>
-              <li data-filter=".filter-Bf" id="breakfast">Breakfast</li>
+              <li data-filter=".filter-Bf">Breakfast</li>
               <li data-filter=".filter-Lch">Lunch</li>
               <li data-filter=".filter-Din">Dinner</li>
               <li data-filter=".filter-Dst">Desserts</li>
@@ -906,7 +953,7 @@
             <div class="col-12">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
-                <label class="form-check-label" for="gridCheck">
+                <label class="form-check-label" for="gridCheck" id="label">
                 I'm Already a Member
                 </label>
               </div>
