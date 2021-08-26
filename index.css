@@ -88,9 +88,13 @@ h5, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
   text-align: center;
 }
 
+
+
 .card {
   padding: 9px;
-  
+  gap:1.5rem;
+  /*width: 210px;
+  height: 298px;*/
   border-radius: 10px;
   background: #fff;
   border: 1px solid rgb(255 255 255);
@@ -99,3 +103,92 @@ h5, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
 .card-img, .card-img-top {
   border-radius: 7px;
 }
+
+
+
+/*about*/
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+}
+
+.about .row .content h3{
+    color:var(--black);
+    font-size: 4rem;
+    padding:.5rem 0;
+}
+
+.about .row .content p{
+    color:var(--light-color);
+    font-size: 1.5rem;
+    padding:.5rem 0;
+    line-height: 2;
+}
+
+.about .row .content .icons-container{
+    display: flex;
+    gap:1rem;
+    flex-wrap: wrap;
+    padding:1rem 0;
+    margin-top: .5rem;
+}
+
+.about .row .content .icons-container .icons{
+    background:#eee;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    flex:1 1 17rem;
+    padding:1.5rem 1rem;
+}
+
+.about .row .content .icons-container .icons i{
+    font-size: 2.5rem;
+    color:var(--green);
+}
+
+.about .row .content .icons-container .icons span{
+    font-size: 1.5rem;
+    color:var(--black);
+}
+
+.sub-heading {
+    text-align: center;
+    color: var(--green);
+    font-size: 2rem;
+    padding-top: 1rem;}
+
+    .heading {
+        text-align: center;
+        color: var(--black);
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        text-transform: uppercase;}
+/*about ends*/
+/*.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--red);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+}*/
