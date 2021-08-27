@@ -3,7 +3,7 @@ section{
 }
 
 .navbar {
-  border-radius: 15px;
+  /*border-radius: 15px;*/
   width: 100%;
   position: fixed;
   z-index: 1000;
