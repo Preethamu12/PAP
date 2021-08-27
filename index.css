@@ -4,7 +4,7 @@
   z-index: 1000;
 }
 .navbar:hover{
-  
+
 }
 .loader-container {
   position: fixed;
@@ -199,3 +199,10 @@ h5, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
     cursor: pointer;
     padding: .8rem 3rem;
 }*/
+
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 7px;
