@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css " rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
@@ -35,7 +38,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
             </li>
-          <!--  <li class="nav-item dropdown">
+            <!--  <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Menu
               </a>
@@ -300,23 +303,80 @@
     </section>
     <!--Carousel end-->
 
+    <!-- book a table Section start-->
+    <section class="sub-heading book">
+      <div>
+        <p class="sub-heading">Need food and a good place to eat? Welcome to our humble place where you can eat good food peacefully.</p>
+        <button class="btn btn-dark buk"><i class="" data-bs-toggle="modal" data-bs-target="#BookModal" style="font-size: 1.5rem;">Book a table</i></button>
+      </div>
+    </section>
+    <!-- book a section Modal End-->
+
+    <!-- book a table Modal start-->
+    <div class="modal fade" id="BookModal" tabindex="-1" aria-labelledby="BookModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="BookModalLabel">Book a table</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="row g-3 tab-for">
+              <div class="col-md-6 book">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+              </div>
+              <div class="col-md-6 book">
+                <label for="inputName4" class="form-label">Name</label>
+                <input type="name" class="form-control" id="inputName4">
+              </div>
+              <div class="col-md-6 book">
+                <label for="inputNumber" class="form-label">Number</label>
+                <input type="text" class="form-control" id="inputNumber">
+              </div>
+              <div class="col-md-6 book">
+                <label for="inputNumber" class="form-label">Enter the number of tables</label>
+                <select class="form-select form-select-l mb-3" aria-label=".form-select-l example">
+                  <option selected>Select number of tables</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three or more</option>
+                </select>
+              </div>
+              <div class="inputBox col-md-6 book">
+                <label for="inputDay" class="form-label">Enter the Date and Time</label>
+                <div>
+                  <input type="datetime-local" class="book-time">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- book a table Modal End-->
+
     <!--About start-->
     <section class="about" id="about">
 
-        <h3 class="sub-heading">About Us </h3>
-        <h1 class="heading"> why choose us? </h1>
+      <h3 class="sub-heading">About Us </h3>
+      <h1 class="sub-heading"> why choose us? </h1>
 
-        <div class="row" style="margin-bottom: 50px">
+      <div class="row" style="margin-bottom: 50px">
 
-            <div class="image" style="width:100%">
-                <img src="about-img.png" alt="">
-            </div>
+        <div class="image" style="width:100%">
+          <img src="about-img.png" alt="">
+        </div>
 
-            <div class="content">
-                <h3>best food in the town</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,corrupti corporis quaerat voluptatem ipsam neque labore modi autem, saepe numquam quod reprehenderit rem? Tempora aut soluta odio corporis nihil!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nemo. Sit porro illo eos cumque deleniti iste alias, eum natus.</p>
-                <!--<div class="icons-container">
+        <div class="content">
+          <h3>best food in the town</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,corrupti corporis quaerat voluptatem ipsam neque labore modi autem, saepe numquam quod reprehenderit rem? Tempora aut soluta odio corporis nihil!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nemo. Sit porro illo eos cumque deleniti iste alias, eum natus.</p>
+          <!--<div class="icons-container">
                     <div class="icons">
                         <i class="fas fa-shipping-fast"></i>
                         <span>free delivery</span>
@@ -331,68 +391,12 @@
                     </div>
                 </div>
                 <a href="#" class="btn">learn more</a>-->
-            </div>
-
         </div>
+
+      </div>
 
     </section>
     <!-- about section ends -->
-
-<!-- book a table Section start-->
-<section style="text-align:center;">
-<button class="btn btn-dark buk"><i class="col-md-12" data-bs-toggle="modal" data-bs-target="#BookModal" style="font-size: 2rem;">Book a table</i></button>
-</section>
-<!-- book a section Modal End-->
-
-<!-- book a table Modal start-->
-<div class="modal fade" id="BookModal" tabindex="-1" aria-labelledby="BookModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="BookModalLabel">Book a table</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      <form class="row g-3 tab-for">
-        <div class="col-md-6 book">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6 book">
-          <label for="inputName4" class="form-label">Name</label>
-          <input type="name" class="form-control" id="inputName4">
-        </div>
-        <div class="col-md-6 book">
-          <label for="inputNumber" class="form-label">Number</label>
-          <input type="text" class="form-control" id="inputNumber">
-        </div>
-        <div class="col-md-6 book">
-          <label for="inputNumber" class="form-label">Enter the number of tables</label>
-          <select class="form-select form-select-l mb-3" aria-label=".form-select-l example">
-        <option selected>Select number of tables</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three or more</option>
-      </select>
-    </div>
-    <div class="inputBox col-md-6 book">
-      <label for="inputDay" class="form-label">Enter the Date and Time</label>
-          <div >
-            <input type="datetime-local" class="book-time">
-          </div>
-    </div>
-      </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Confirm</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- book a table Modal End-->
-
-
 
 
     <!--Menu start-->
@@ -400,7 +404,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 style="text-align:center"><span>Menu</span></h2>
+          <h1 style="text-align:center"><span>Menu</span></h1>
         </div>
 
         <div class="row">
@@ -417,10 +421,8 @@
 
         <div class="row menu-container">
 
-          <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Breakfast" >
-
+          <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Breakfast">
             <div class="col-lg-2 menu-item filter-Bf">
-
 
               <div class="card">
                 <a href="#"><img src="Break1.jpg" class="card-img-top" alt="breakfast"></a>
@@ -432,17 +434,13 @@
                   </a>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Bf">
-
 
               <div class="card">
                 <a href="#"><img src="break2.jpg" class="card-img-top" alt="breakfast"></a>
@@ -454,18 +452,12 @@
                   </a>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
 
-
-
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Bf">
-
 
               <div class="card">
                 <a href="#"><img src="break3.jpg" class="card-img-top" alt="breakfast"></a>
@@ -477,17 +469,13 @@
                   </a>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Lunch" id="lunch">
-
             <div class="col-lg-2 menu-item filter-Lch">
-
 
               <div class="card">
                 <a href="#"><img src="Lunch1.jpg" class="card-img-top" alt="lunch"></a>
@@ -499,18 +487,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Lch">
-
 
               <div class="card">
                 <a href="#"><img src="Lunch2.jpg" class="card-img-top" alt="lunch"></a>
@@ -522,17 +505,13 @@
                   </a>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Lch">
-
 
               <div class="card">
                 <a href="#"><img src="Lunch3.jpeg" class="card-img-top" alt="lunch"></a>
@@ -544,16 +523,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Bf">
-
 
               <div class="card">
                 <a href="#"><img src="idli-sambar.jpg" class="card-img-top" alt="breakfast"></a>
@@ -565,18 +541,13 @@
                   </a>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
 
 
-
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Bf">
-
 
               <div class="card">
                 <a href="#"><img src="thepla.jpg" class="card-img-top" alt="breakfast"></a>
@@ -588,17 +559,13 @@
                   </a>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Bf">
-
 
               <div class="card">
                 <a href="#"><img src="masalaomelette.jpg" class="card-img-top" alt="breakfast"></a>
@@ -610,16 +577,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Lch">
-
 
               <div class="card">
                 <a href="#"><img src="chickenfriedrice.jpg" class="card-img-top" alt="lunch"></a>
@@ -631,17 +595,13 @@
                   </a>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Lch">
-
 
               <div class="card">
                 <a href="#"><img src="rajmachawal.jpg" class="card-img-top" alt="lunch"></a>
@@ -653,16 +613,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Lch">
-
 
               <div class="card">
                 <a href="#"><img src="vegthali.jpg" class="card-img-top" alt="lunch"></a>
@@ -674,16 +631,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3" id="dinner">
-
             <div class="col-lg-2 menu-item filter-Din">
-
 
               <div class="card">
                 <a href="#"><img src="Dinner1.jpg" class="card-img-top" alt="dinner"></a>
@@ -695,16 +649,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Din">
-
 
               <div class="card">
                 <a href="#"><img src="Dinner2.jpeg" class="card-img-top" alt="dinner"></a>
@@ -716,15 +667,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Din">
-
 
               <div class="card">
                 <a href="#"><img src="Dinner3.jpeg" class="card-img-top" alt="dinner"></a>
@@ -736,14 +685,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
 
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3" id="dessert">
-
             <div class="col-lg-2 menu-item filter-Dst">
 
               <div class="card">
@@ -756,16 +704,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Dst">
-
 
               <div class="card">
                 <a href="#"><img src="Dessert2.jpeg" class="card-img-top" alt="dessert"></a>
@@ -777,16 +722,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Dst">
-
 
               <div class="card">
                 <a href="#"><img src="Dessert3.jpeg" class="card-img-top" alt="dessert"></a>
@@ -798,16 +740,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Din">
-
 
               <div class="card">
                 <a href="#"><img src="GrilledTandoori.jpg" class="card-img-top" alt="dinner"></a>
@@ -819,17 +758,13 @@
                   </a>
                 </div>
               </div>
-            </div>
 
+            </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Din">
-
 
               <div class="card">
                 <a href="#"><img src="DaalChawal.jpg" class="card-img-top" alt="dinner"></a>
@@ -841,16 +776,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Din">
-
 
               <div class="card">
                 <a href="#"><img src="Rumali.jpg" class="card-img-top" alt="dinner"></a>
@@ -862,16 +794,13 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Dst">
-
 
               <div class="card">
                 <a href="#"><img src="chocolatehazelnutcake.jpg" class="card-img-top" alt="dessert"></a>
@@ -888,12 +817,8 @@
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Dst">
-
 
               <div class="card">
                 <a href="#"><img src="pie.jpg" class="card-img-top" alt="dessert"></a>
@@ -905,14 +830,12 @@
                   </a>
                 </div>
               </div>
+
             </div>
           </div>
 
 
-
-
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
-
             <div class="col-lg-2 menu-item filter-Dst">
 
               <div class="card">
@@ -927,65 +850,78 @@
               </div>
 
             </div>
-
           </div>
 
         </div>
 
       </div>
     </section>
+
     <!--Menu end-->
+
+    <!-- gallery section starts-->
+    <section id="gallery" class="gallery">
+      <div class="container">
+
+        <div class="section-title">
+          <h1 style="text-align:center"><span>Our Gallery</span></h1>
+        </div>
+
+
+      </div>
+    </section>
+    <!-- gallery section starts-->
 
     <!--Contact Us Start-->
     <section>
-    <div class="container my-4" id="contact">
-      <h2 id="contact-title" style="margin-bottom: 20px;">Contact Us</h2>
-      <!-- Map start -->
-      <div class="map">
-        <iframe style="border:0; width: 100%; height: 350px;"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9701.40525491365!2d74.79278427549143!3d13.019844171121154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba352113ffb7753%3A0x55748a891457f561!2sSrinivas%20University!5e0!3m2!1sen!2sin!4v1629867321798!5m2!1sen!2sin"
-          frameborder="0" allowfullscreen></iframe>
-      </div>
-      <!-- Map end -->
+      <div class="container my-4" id="contact">
+        <h2 id="contact-title" style="margin-bottom: 20px;">Contact Us</h2>
+        <!-- Map start -->
+        <div class="map">
+          <iframe style="border:0; width: 100%; height: 350px;"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9701.40525491365!2d74.79278427549143!3d13.019844171121154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba352113ffb7753%3A0x55748a891457f561!2sSrinivas%20University!5e0!3m2!1sen!2sin!4v1629867321798!5m2!1sen!2sin"
+            frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- Map end -->
 
-      <div class="container mt-5">
-        <!--our info start-->
-        <div class="info-wrap">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 info">
-              <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
-              <p>Mangalore<br>Karnataka,India</p>
-            </div>
+        <div class="container mt-5">
+          <!--our info start-->
+          <div class="info-wrap">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 info">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Mangalore<br>Karnataka,India</p>
+              </div>
 
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="bi bi-clock"></i>
-              <h4>Open Hours:</h4>
-              <p>Monday-Saturday:<br>7:00 AM - 11:30 PM</p>
-            </div>
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-clock"></i>
+                <h4>Open Hours:</h4>
+                <p>Monday-Saturday:<br>7:00 AM - 11:30 PM</p>
+              </div>
 
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="bi bi-envelope"></i>
-              <h4>Email:</h4>
-              <p>srinivasuniversity.edu.in</p>
-            </div>
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>srinivasuniversity.edu.in</p>
+              </div>
 
-            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-              <i class="bi bi-phone"></i>
-              <h4>Call:</h4>
-              <p>+91 9876543210<br>+91 8765432109</p>
+              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 9876543210<br>+91 8765432109</p>
+              </div>
             </div>
           </div>
-        </div>
-        <!--our info End-->
+          <!--our info End-->
 
-        <!--Feedback form start-->
-        <form class="row g-3">
+          <!--Feedback form start-->
+          <form class="row g-3">
             <div class="col-md-6">
-                <label for="inputName4" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="inputName4" required>
-             </div>
-             <div class="col-md-6">
+              <label for="inputName4" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="inputName4" required>
+            </div>
+            <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
               <input type="email" class="form-control" id="inputEmail4">
             </div>
@@ -995,19 +931,109 @@
             </div>
             <div class="col-mt-6">
               <label for="inputMessage" class="form-label">Message</label>
-              <textarea class="form-control" name="message" rows="5"  id="inputMessage" required></textarea>
+              <textarea class="form-control" name="message" rows="5" id="inputMessage" required></textarea>
             </div>
             <div class="col-12">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>
           </form>
 
+        </div>
+
+      </div>
+    </section>
+    <!--Contact Us End-->
+    <!--review section start-->
+    <section class="review" id="review">
+
+      <h2 class="sub-heading"> customer's review </h2>
+      <h3 class="sub-heading"> what they say </h3>
+
+      <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="images/pic-1.png" alt="">
+              <div class="user-info">
+                <h3>Pinto</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <p>Praveen makes awesome dishes!<br>#homemade<br>#protien </p>
+          </div>
+
+
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="images/pic-4.png" alt="">
+              <div class="user-info">
+                <h3>Praveen</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>Pinto is a very excellent waiter! just needs to shave his head properly.</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="images/pic-4.png" alt="">
+              <div class="user-info">
+                <h3>Prajnesh</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>PAP Resto is one of the best restaurant i have visited. It provides Quality food for a reasonable rate! Do visit the place with your family and friends!</p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="images/pic-4.png" alt="">
+              <div class="user-info">
+                <h3>Preetham</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>PAP Resto is one of the best restaurant i have visited. It provides Quality food for a reasonable rate! Do visit the place with your family and friends!</p>
+          </div>
+
+
+        </div>
+
       </div>
 
-    </div>
-  </section>
-    <!--Contact Us End-->
+    </section>
 
+    <!--review section end-->
     <!--loader part  -->
     <!--div class="loader-container">
       <img src="loader.gif" alt="">
@@ -1015,6 +1041,7 @@
 
 
     <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
