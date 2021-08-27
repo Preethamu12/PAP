@@ -10,6 +10,7 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css " rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="stylesheet" href="index.css">
   <title>PAP project</title>
 </head>
@@ -34,7 +35,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#menu">Menu</a>
             </li>
-            <!--  <li class="nav-item dropdown">
+          <!--  <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Menu
               </a>
@@ -73,13 +74,11 @@
             <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
-        <div class="mx-1">
-          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
-        </div>
+
         <div class="mx-2">
           <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#bellModal"><i class="bi bi-bell" style="font-size: 2rem; color: orange;"></i></button>
           <button class="btn btn-light" data-bs-toggle="modal" data-bs-target="#cartModal"><i class="bi bi-cart-plus-fill" style="font-size: 2rem; color: orange;"></i></button>
-          <button class="btn btn-light"><i class="bi bi-person-circle" style="font-size: 2rem; color: orange;"></i></button>
+          <button class="btn btn-light"><i class="bi bi-person-circle" data-bs-toggle="modal" data-bs-target="#loginModal" style="font-size: 2rem; color: orange;"></i></button>
         </div>
       </div>
     </nav>
@@ -244,15 +243,14 @@
             <!-- total price-->
             <div class="navbar-cart-total"><span class="text-uppercase text-muted">Total:</span><strong class="text-uppercase"><i class="fas fa-rupee-sign"></i>250.00</strong></div>
             <!-- buttons-->
-            <div class="d-flex justify-content-between"><span class="btn btn-link text-dark me-3">Place
-                Order <i class="fa-arrow-right fa"></i></span><a class="btn btn-outline-dark" href="checkout.html">Checkout</a></div>
+            <div class="d-flex justify-content-between"><span class="btn text-dark me-3">Place
+                Order <i class="fa-arrow-right fa"></i></span><a class="btn btn-outline-success" href="checkout.html">Drive Through</a><a class="btn btn-outline-danger" href="checkout.html">Home Delivery</a></div>
           </div>
 
 
         </div>
       </div>
     </div>
-
     <!-- Cart Modal end -->
   </header>
 
@@ -273,8 +271,6 @@
             <div class="carousel-caption d-none d-md-block ">
               <h2>Welcome to PAP Resto</h2>
               <p>have food</p>
-              <button class="btn btn-primary">Drive Through</button>
-              <button class="btn btn-success">Home Delivery</button>
             </div>
           </div>
           <div class="carousel-item">
@@ -282,8 +278,6 @@
             <div class="carousel-caption d-none d-md-block">
               <h2>The Best food</h2>
               <p>Hygiene is out top priority</p>
-              <button class="btn btn-primary">Drive Through</button>
-              <button class="btn btn-success">Home Delivery</button>
             </div>
           </div>
           <div class="carousel-item">
@@ -291,8 +285,6 @@
             <div class="carousel-caption d-none d-md-block">
               <h2>Tasty</h2>
               <p>Have a delicious meal right now!</p>
-              <button class="btn btn-primary">Drive Through</button>
-              <button class="btn btn-success">Home Delivery</button>
             </div>
           </div>
         </div>
@@ -311,20 +303,20 @@
     <!--About start-->
     <section class="about" id="about">
 
-      <h3 class="sub-heading"> about us </h3>
-      <h1 class="heading"> why choose us? </h1>
+        <h3 class="sub-heading"> about us </h3>
+        <h1 class="heading"> why choose us? </h1>
 
-      <div class="row" style="margin-bottom: 50px">
+        <div class="row" style="margin-bottom: 50px">
 
-        <div class="image" style="width:100%">
-          <img src="about-img.png" alt="">
-        </div>
+            <div class="image" style="width:100%">
+                <img src="about-img.png" alt="">
+            </div>
 
-        <div class="content">
-          <h3>best food in the town</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,corrupti corporis quaerat voluptatem ipsam neque labore modi autem, saepe numquam quod reprehenderit rem? Tempora aut soluta odio corporis nihil!</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nemo. Sit porro illo eos cumque deleniti iste alias, eum natus.</p>
-          <!--<div class="icons-container">
+            <div class="content">
+                <h3>best food in the town</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,corrupti corporis quaerat voluptatem ipsam neque labore modi autem, saepe numquam quod reprehenderit rem? Tempora aut soluta odio corporis nihil!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, nemo. Sit porro illo eos cumque deleniti iste alias, eum natus.</p>
+                <!--<div class="icons-container">
                     <div class="icons">
                         <i class="fas fa-shipping-fast"></i>
                         <span>free delivery</span>
@@ -339,9 +331,9 @@
                     </div>
                 </div>
                 <a href="#" class="btn">learn more</a>-->
-        </div>
+            </div>
 
-      </div>
+        </div>
 
     </section>
     <!-- about section ends -->
@@ -372,8 +364,10 @@
 
         <div class="row menu-container">
 
-          <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Breakfast">
+          <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Breakfast" >
+
             <div class="col-lg-2 menu-item filter-Bf">
+
 
               <div class="card">
                 <a href="#"><img src="Break1.jpg" class="card-img-top" alt="breakfast"></a>
@@ -385,13 +379,17 @@
                   </a>
                 </div>
               </div>
-
             </div>
+
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Bf">
+
 
               <div class="card">
                 <a href="#"><img src="break2.jpg" class="card-img-top" alt="breakfast"></a>
@@ -403,13 +401,18 @@
                   </a>
                 </div>
               </div>
-
             </div>
+
           </div>
 
 
+
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Bf">
+
 
               <div class="card">
                 <a href="#"><img src="break3.jpg" class="card-img-top" alt="breakfast"></a>
@@ -421,13 +424,17 @@
                   </a>
                 </div>
               </div>
-
             </div>
+
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 Lunch" id="lunch">
+
             <div class="col-lg-2 menu-item filter-Lch">
+
 
               <div class="card">
                 <a href="#"><img src="Lunch1.jpg" class="card-img-top" alt="lunch"></a>
@@ -439,13 +446,18 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Lch">
+
 
               <div class="card">
                 <a href="#"><img src="Lunch2.jpg" class="card-img-top" alt="lunch"></a>
@@ -457,13 +469,17 @@
                   </a>
                 </div>
               </div>
-
             </div>
+
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Lch">
+
 
               <div class="card">
                 <a href="#"><img src="Lunch3.jpeg" class="card-img-top" alt="lunch"></a>
@@ -475,13 +491,16 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Bf">
+
 
               <div class="card">
                 <a href="#"><img src="idli-sambar.jpg" class="card-img-top" alt="breakfast"></a>
@@ -493,13 +512,18 @@
                   </a>
                 </div>
               </div>
-
             </div>
+
           </div>
 
 
+
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Bf">
+
 
               <div class="card">
                 <a href="#"><img src="thepla.jpg" class="card-img-top" alt="breakfast"></a>
@@ -511,13 +535,17 @@
                   </a>
                 </div>
               </div>
-
             </div>
+
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Bf">
+
 
               <div class="card">
                 <a href="#"><img src="masalaomelette.jpg" class="card-img-top" alt="breakfast"></a>
@@ -529,13 +557,16 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Lch">
+
 
               <div class="card">
                 <a href="#"><img src="chickenfriedrice.jpg" class="card-img-top" alt="lunch"></a>
@@ -547,13 +578,17 @@
                   </a>
                 </div>
               </div>
-
             </div>
+
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Lch">
+
 
               <div class="card">
                 <a href="#"><img src="rajmachawal.jpg" class="card-img-top" alt="lunch"></a>
@@ -565,13 +600,16 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Lch">
+
 
               <div class="card">
                 <a href="#"><img src="vegthali.jpg" class="card-img-top" alt="lunch"></a>
@@ -583,13 +621,16 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3" id="dinner">
+
             <div class="col-lg-2 menu-item filter-Din">
+
 
               <div class="card">
                 <a href="#"><img src="Dinner1.jpg" class="card-img-top" alt="dinner"></a>
@@ -601,13 +642,16 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Din">
+
 
               <div class="card">
                 <a href="#"><img src="Dinner2.jpeg" class="card-img-top" alt="dinner"></a>
@@ -619,13 +663,15 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Din">
+
 
               <div class="card">
                 <a href="#"><img src="Dinner3.jpeg" class="card-img-top" alt="dinner"></a>
@@ -637,12 +683,14 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3" id="dessert">
+
             <div class="col-lg-2 menu-item filter-Dst">
 
               <div class="card">
@@ -655,13 +703,16 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Dst">
+
 
               <div class="card">
                 <a href="#"><img src="Dessert2.jpeg" class="card-img-top" alt="dessert"></a>
@@ -673,13 +724,16 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Dst">
+
 
               <div class="card">
                 <a href="#"><img src="Dessert3.jpeg" class="card-img-top" alt="dessert"></a>
@@ -691,13 +745,16 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Din">
+
 
               <div class="card">
                 <a href="#"><img src="GrilledTandoori.jpg" class="card-img-top" alt="dinner"></a>
@@ -709,13 +766,17 @@
                   </a>
                 </div>
               </div>
-
             </div>
+
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Din">
+
 
               <div class="card">
                 <a href="#"><img src="DaalChawal.jpg" class="card-img-top" alt="dinner"></a>
@@ -727,13 +788,16 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Din">
+
 
               <div class="card">
                 <a href="#"><img src="Rumali.jpg" class="card-img-top" alt="dinner"></a>
@@ -745,13 +809,16 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Dst">
+
 
               <div class="card">
                 <a href="#"><img src="chocolatehazelnutcake.jpg" class="card-img-top" alt="dessert"></a>
@@ -768,8 +835,12 @@
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Dst">
+
 
               <div class="card">
                 <a href="#"><img src="pie.jpg" class="card-img-top" alt="dessert"></a>
@@ -781,12 +852,14 @@
                   </a>
                 </div>
               </div>
-
             </div>
           </div>
 
 
+
+
           <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
             <div class="col-lg-2 menu-item filter-Dst">
 
               <div class="card">
@@ -801,6 +874,7 @@
               </div>
 
             </div>
+
           </div>
 
         </div>
@@ -811,54 +885,54 @@
 
     <!--Contact Us Start-->
     <section>
-      <div class="container my-4" id="contact">
-        <h2 id="contact-title" style="margin-bottom: 20px;">Contact Us</h2>
-        <!-- Map start -->
-        <div class="map">
-          <iframe style="border:0; width: 100%; height: 350px;"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9701.40525491365!2d74.79278427549143!3d13.019844171121154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba352113ffb7753%3A0x55748a891457f561!2sSrinivas%20University!5e0!3m2!1sen!2sin!4v1629867321798!5m2!1sen!2sin"
-            frameborder="0" allowfullscreen></iframe>
-        </div>
-        <!-- Map end -->
+    <div class="container my-4" id="contact">
+      <h2 id="contact-title" style="margin-bottom: 20px;">Contact Us</h2>
+      <!-- Map start -->
+      <div class="map">
+        <iframe style="border:0; width: 100%; height: 350px;"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9701.40525491365!2d74.79278427549143!3d13.019844171121154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba352113ffb7753%3A0x55748a891457f561!2sSrinivas%20University!5e0!3m2!1sen!2sin!4v1629867321798!5m2!1sen!2sin"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- Map end -->
 
-        <div class="container mt-5">
-          <!--our info start-->
-          <div class="info-wrap">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 info">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Mangalore<br>Karnataka,India</p>
-              </div>
+      <div class="container mt-5">
+        <!--our info start-->
+        <div class="info-wrap">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 info">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>Mangalore<br>Karnataka,India</p>
+            </div>
 
-              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-                <i class="bi bi-clock"></i>
-                <h4>Open Hours:</h4>
-                <p>Monday-Saturday:<br>7:00 AM - 11:30 PM</p>
-              </div>
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-clock"></i>
+              <h4>Open Hours:</h4>
+              <p>Monday-Saturday:<br>7:00 AM - 11:30 PM</p>
+            </div>
 
-              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>srinivasuniversity.edu.in</p>
-              </div>
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>srinivasuniversity.edu.in</p>
+            </div>
 
-              <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 9876543210<br>+91 8765432109</p>
-              </div>
+            <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+91 9876543210<br>+91 8765432109</p>
             </div>
           </div>
-          <!--our info End-->
+        </div>
+        <!--our info End-->
 
-          <!--Feedback form start-->
-          <form class="row g-3">
+        <!--Feedback form start-->
+        <form class="row g-3">
             <div class="col-md-6">
-              <label for="inputName4" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="inputName4" required>
-            </div>
-            <div class="col-md-6">
+                <label for="inputName4" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="inputName4" required>
+             </div>
+             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
               <input type="email" class="form-control" id="inputEmail4">
             </div>
@@ -868,13 +942,13 @@
             </div>
             <div class="col-mt-6">
               <label for="inputMessage" class="form-label">Message</label>
-              <textarea class="form-control" name="message" rows="5" id="inputMessage" required></textarea>
+              <textarea class="form-control" name="message" rows="5"  id="inputMessage" required></textarea>
             </div>
             <div class="col-12">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck">
                 <label class="form-check-label" for="gridCheck" id="label">
-                  I'm Already a Member
+                I'm Already a Member
                 </label>
               </div>
             </div>
@@ -883,10 +957,10 @@
             </div>
           </form>
 
-        </div>
-
       </div>
-    </section>
+
+    </div>
+  </section>
     <!--Contact Us End-->
 
     <!--loader part  -->
