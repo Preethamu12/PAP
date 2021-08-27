@@ -31,7 +31,7 @@ h5, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
   text-align: center;
 }
 
-.menu #menu-flters li {
+.menu #menu-flters li,.buk {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
@@ -46,7 +46,7 @@ h5, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
   border-radius: 50px;
 }
 
-.menu #menu-flters li:hover, .menu #menu-flters li.filter-active {
+.menu #menu-flters li:hover, .menu #menu-flters li.filter-active ,.buk{
   color: #fff;
   background: #616160;
 }
