@@ -8,6 +8,7 @@ section{
   position: fixed;
   z-index: 1000;
 }
+.navbar-brand{margin-left: 100px;}
 
 .loader-container {
   position: fixed;
