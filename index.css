@@ -33,7 +33,7 @@ section{
   opacity: 0;
 }
 
-h5, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
+h6, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
   text-align: center;
 }
 
@@ -41,7 +41,7 @@ h5, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
   cursor: pointer;
   display: inline-block;
   padding: 8px 16px 10px 16px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 1;
   color: #444444;
@@ -103,8 +103,10 @@ h5, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
 .card {
   padding: 9px;
   gap: 1.5rem;
-  /*width: 210px;
-  height: 298px;*/
+  overflow: hidden;
+  position: relative;
+  width: 205px;
+  height: 310px;
   border-radius: 10px;
   background: #fff;
   border: 1px solid rgb(255 255 255);
@@ -130,7 +132,7 @@ h5, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
   transition: all ease-in-out 0.4s;
 }
 
-.gallery .gallery-item:hover img {
+.gallery .gallery-item:hover img ,.card:hover{
   transform: scale(1.1);
 }
 

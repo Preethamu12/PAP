@@ -26,28 +26,13 @@
     }
   }
 
-
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      })
-  }
-
-
   /**
    * Menu isotope and filter
    */
   window.addEventListener('load', () => {
     let menuContainer = select('.menu-container');
     if (menuContainer) {
-      let menuIsotope = new Isotope(menuContainer, {
-        itemSelector: '.menu-item',
-        layoutMode: 'fitRows'
-      });
+      let menuIsotope = new Isotope(menuContainer, {itemSelector: '.menu-item',layoutMode: 'fitRows'});
 
       let menuFilters = select('#menu-flters li', true);
 
