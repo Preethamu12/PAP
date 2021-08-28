@@ -67,62 +67,66 @@
         <div class="row">
           <div class="col-lg-8">
             <ul class="custom-nav nav nav-pills mb-5">
-              <li class="nav-item w-25"><a class="nav-link text-sm active" href="checkout.html">Delivery Method</a></li>
-              <li class="nav-item w-25"><a class="nav-link text-sm " href="Payment-1.html">Payment Method </a></li>
+              <li class="nav-item w-25"><a class="nav-link text-sm " href="checkout.html">Delivery Method</a></li>
+              <li class="nav-item w-25"><a class="nav-link text-sm " href="#">Address</a></li>
+              <li class="nav-item w-25"><a class="nav-link text-sm active"="Payment-2">Payment Method </a></li>
               <li class="nav-item w-25"><a class="nav-link text-sm " href="#">Order Review</a></li>
             </ul>
             <form class="">
+        <div class="collapse show">
+          <div class="mb-5">
+            <div class="block mb-3">
+              <div class="block-header"><a href="#" class="accordion-link font-weight-bold " aria-expanded="true">Option one</a></div>
               <div class="collapse show">
-                <div class="row">
-                  <div class="col-md-4">
-                    <div class="card-radio mb-4"><label class="card-label" for="option0"></label><input type="radio" class="card-radio-input" name="shipping" id="option0" checked="" />
-                      <div class="card">
-                        <div class="card-header">
-                          <h6 class="mb-0 text-uppercase">Drive Through</h6>
-                        </div>
-                        <div class="card-body">
-                          <h6 class="mb-3"><i class="fas fa-rupee-sign"></i>50</h6>
-                          <p class="text-muted text-sm card-text">Order and Drive Through,Collect your order outside PAP Resto at counter 2. </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-radio mb-4"><label class="card-label" for="option1"></label><input type="radio" class="card-radio-input" name="shipping" id="option1" />
-                      <div class="card">
-                        <div class="card-header">
-                          <h6 class="mb-0 text-uppercase">Home Delivery</h6>
-                        </div>
-                        <div class="card-body">
-                          <h6 class="mb-3"><i class="fas fa-rupee-sign"></i>100</h6>
-                          <p class="text-muted text-sm card-text">Get it within 30 minutes at your Door step - fastest option possible.</p>
-                          <a href="Address.html">
-                            <div style="text-align:center"><a class="btn btn-outline-danger" href="Address.html">Checkout</a></div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-4">
-                    <div class="card-radio mb-4"><label class="card-label" for="option2"></label><input type="radio" class="card-radio-input" name="shipping" id="option2" />
-                      <div class="card">
-                        <div class="card-header">
-                          <h6 class="mb-0 text-uppercase">Table Orders</h6>
-                        </div>
-                        <div class="card-body">
-                          <h6 class="mb-3"><i class="fas fa-rupee-sign"></i>10</h6>
-                          <p class="text-muted text-sm card-text">Get it on your respective table - Table orders.</p>
-                        </div>
-                      </div>
-                    </div>
+                <div class="block-body">
+                  <div class="row">
+                    <div class="col-md-6 form-group"><label for="card-name" class="form-label">Name on Card</label><input name="card-name" placeholder="Name on card" type="text" class="form-control" value=""></div>
+                    <div class="col-md-6 form-group"><label for="card-number" class="form-label">Card Number</label><input name="card-number" placeholder="Card number" type="text" class="form-control" value=""></div>
+                    <div class="col-md-4 form-group"><label for="expiry-date" class="form-label">Expiry Date</label><input name="expiry-date" placeholder="MM/YY" type="text" class="form-control" value=""></div>
+                    <div class="col-md-4 form-group"><label for="cvv" class="form-label">CVC/CVV</label><input name="cvv" placeholder="123" type="text" class="form-control" value=""></div>
+                    <div class="col-md-4 form-group"><label for="zip" class="form-label">ZIP</label><input name="zip" placeholder="123" type="text" class="form-control" value=""></div>
                   </div>
                 </div>
               </div>
-              <div class="my-5 d-flex justify-content-between flex-column flex-lg-row">
-                <a href="index.html" class="text-muted btn btn-link"><i class="fa fa-angle-left mr-2"></i>Back</a>
-                <a href="Payment-1.html" class="btn btn-dark">Choose payment method<i class="fa fa-angle-right ml-2"></i></a>
-              </div>
-            </form>
+            </div>
+            <div class="block mb-3">
+              <div class="block-header"><a href="#" class="accordion-link font-weight-bold ">Paypal</a></div>
+                <div class="block-body">
+                  <div class="row">
+                    <div class="col">
+                      <div class="custom-radio custom-control"><input type="radio" id="payment-method-" name="payment" class="custom-control-input"><label class="custom-label" for="payment-method-1"><span class="d-block h6 mt-1 mb-3">Pay with
+                            PayPal</span><span class="text-muted text-sm">+918762133593</span></label></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="block mb-3">
+              <div class="block-header"><a href="#" class="accordion-link font-weight-bold collapsed">GPay</a></div>
+                <div class="block-body">
+                  <div class="row">
+                    <div class="col">
+                      <div class="custom-radio custom-control"><input type="radio" id="payment-method-2" name="payment" class="custom-control-input"><label class="custom-control-label" for="payment-method-1"><span class="d-block h6 mt-1 mb-3">Pay with
+                            GPay</span><span class="text-muted text-sm">+918762133593</span></label></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="block mb-3">
+              <div class="block-header"><a href="#" class="accordion-link font-weight-bold collapsed">Pay on delivery</a></div>
+                <div class="block-body">
+                  <div class="row">
+                    <div class="col">
+                      <div class="custom-radio custom-control"><input type="radio" id="payment-method-2" name="payment" class="custom-control-input"><label class="custom-control-label" for="payment-method-2"><span class="d-block h6 mt-1 mb-3">Pay on
+                            delivery</span><span class="text-muted text-sm">Pay when the order is at your Door step.</span></label></div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="my-5 d-flex justify-content-between flex-column flex-lg-row"><a href="checkout.html" class="text-muted btn btn-link"><i class="fa fa-angle-left mr-2"></i>Back to the delivery method</a><a href="orderview.html"
+            class="btn btn-dark">Continue to order review<i class="fa fa-angle-right ml-2"></i></a></div>
+      </form>
           </div>
           <div class="col-lg-4">
             <div class="block mb-5">
