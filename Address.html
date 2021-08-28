@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css " rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="C:\Users\azhan\OneDrive\Documents\GitHub\PAP\index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="index.css">
+  <title>PAP project</title>
+</head>
+
+<body>
+  <!--Header start-->
+  <header class="header container">
+    <!--Navbar start-->
+    <nav class="navbar bg-light" style="position:inherit">
+      <div class="container">
+        <br>
+        <a class="nav-link " href="index.html" style="color:black ">PAP Resto</a>
+        <br>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!-- bottom Bar-->
+    <div class="bottom-bar">
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+          <div class="col-sm-7 d-none d-sm-block">
+            <ul class="list-inline topbar-text mb-0">
+              <li class="list-inline-item pe-3 me-0">
+                <i class="bi bi-telephone-fill"></i>+91 9876543210
+              </li>
+              <li class="list-inline-item px-3 border-start d-none d-lg-inline-block">Free shipping on
+                orders over <i class="fas fa-rupee-sign"></i>2000</li>
+            </ul>
+          </div>
+          <div class="col-sm-5 d-flex justify-content-end">
+            <!-- Language Dropdown-->
+            <div class="dropdown border-end px-3">
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-animated" aria-labelledby="langsDropdown"></div><a class="dropdown-item text-sm" href="#">India</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar End-->
+  <!--Checkout start-->
+  <section class="hero">
+    <div class="container">
+      <!-- Hero Content-->
+      <div class="hero-content pb-5 text-center">
+        <h1 class="hero-heading">Address</h1>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <ul class="custom-nav nav nav-pills mb-5">
+            <li class="nav-item w-25"><a class="nav-link text-sm " href="delivery.html">Delivery Method</a></li>
+            <li class="nav-item w-25"><a class="nav-link text-sm active" href="#">Address</a></li>
+
+            <li class="nav-item w-25"><a class="nav-link text-sm " href="#">Payment Method </a></li>
+            <li class="nav-item w-25"><a class="nav-link text-sm disabled" href="#">Order Review</a></li>
+          </ul>
+          <form action="#">
+            <div class="block">
+              <!-- Invoice Address-->
+              <div class="block-header">
+                <h6 class="text-uppercase mb-0">Invoice address </h6>
+              </div>
+              <div class="block-body">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label class="form-label" for="fullname_invoice">Full Name</label>
+                    <input class="form-control" type="text" name="fullname_invoice" placeholder="PAP Resto" id="" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="form-label" for="emailaddress_invoice">Email Address</label>
+                    <input class="form-control" type="text" name="emailaddress_invoice" placeholder="papresto.123@gmail.com" id="" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="form-label" for="street_invoice">Street</label>
+                    <input class="form-control" type="text" name="street_invoice" placeholder="123 Main St." id="" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="form-label" for="city_invoice">City</label>
+                    <input class="form-control" type="text" name="city_invoice" placeholder="XYZ" id="" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="form-label" for="zip_invoice">ZIP</label>
+                    <input class="form-control" type="text" name="zip_invoice" placeholder="Postal code" id="" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="form-label" for="state_invoice">State</label>
+                    <input class="form-control" type="text" name="state_invoice" placeholder="Karnataka" id="" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="form-label" for="phonenumber_invoice">Phone Number</label>
+                    <input class="form-control" type="text" name="phonenumber_invoice" placeholder="8126459xxx" id="" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label class="form-label" for="promocode_invoice">Promocode</label>
+                    <input class="form-control" type="text" name="promocode_invoice" placeholder="PAP@30R" id="">
+                  </div>
+                  <div class="mb-4 col-12 mt-3">
+                    <div class="form-check">
+                      <input class="form-check-input" id="show-shipping-address" type="checkbox" name="clothes-brand">
+                      <label class="form-check-label align-middle" for="show-shipping-address" data-bs-toggle="collapse" data-bs-target="#shippingAddress">Use a
+                        different shipping address</label>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Invoice Address-->
+              </div>
+              <!-- Shippping Address-->
+              <div class="collapse" id="shippingAddress">
+                <div class="block">
+                  <div class="block-header">
+                    <h6 class="text-uppercase mb-0">Shipping address </h6>
+                  </div>
+                  <div class="block-body">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label class="form-label" for="street_shipping">Street</label>
+                        <input class="form-control" type="text" name="street_shipping" placeholder="123 Main St." id="">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label class="form-label" for="city_shipping">City</label>
+                        <input class="form-control" type="text" name="city_shipping" placeholder="XYZ" id="">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label class="form-label" for="zip_shipping">ZIP</label>
+                        <input class="form-control" type="text" name="zip_shipping" placeholder="Postal code" id="">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label class="form-label" for="state_shipping">State</label>
+                        <input class="form-control" type="text" name="state_shipping" placeholder="Karnataka" id="">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label class="form-label" for="phonenumber_shipping">Phone Number</label>
+                        <input class="form-control" type="text" name="phonenumber_shipping" placeholder="8126459xxx" id="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /Shipping Address-->
+              </div>
+            </div>
+            <div class="mb-5 d-flex justify-content-between flex-column flex-lg-row">
+                <a href="checkout.html" class="text-muted btn btn-link"><i class="fa fa-angle-left mr-2"></i>Back to Delivery Method</a>
+              <a href="Payment.html" class="btn btn-dark">Choose payment method<i class="fa fa-angle-right ml-2"></i></a>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-4">
+          <div class="block mb-5">
+            <div class="block-header">
+              <h6 class="text-uppercase mb-0">Order Summary</h6>
+            </div>
+            <div class="block-body bg-light pt-1">
+              <p class="text-sm">Shipping and additional costs are calculated based on values you have
+                entered.</p>
+              <ul class="order-summary mb-0 list-unstyled">
+                <li class="order-summary-item"><span>Order Subtotal :</span><span><i class="fas fa-rupee-sign"></i>250.00</span></li>
+                <li class="order-summary-item"><span>Shipping and handling :</span><span><i class="fas fa-rupee-sign"></i>100.00</span></li>
+                <li class="order-summary-item"><span>Discount :</span><span><i class="fas fa-rupee-sign"></i>0.00</span></li>
+                <li class="order-summary-item"><span>Tax :</span><span><i class="fas fa-rupee-sign"></i>0.00</span></li>
+                <li class="order-summary-item border-0"><span>Total :</span><strong class="order-summary-total"><i class="fas fa-rupee-sign"></i>350.00</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Checkout end-->
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+  <script src="index.js" alt=""></script>
+
+</body>
+
+</html>
