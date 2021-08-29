@@ -49,7 +49,7 @@ section{
   position: fixed;
   z-index: 1000;
 }
-.navbar-brand{margin-left: 100px;}
+.navbar-brand{margin-left: 50px;}
 
 .loader-container {
   position: fixed;
