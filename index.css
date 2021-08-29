@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
   margin:0;
   padding: 0;
@@ -231,9 +231,8 @@ h6, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
 }
 
 .about .row .content h3 {
-  color: var(--black);
   font-size: 4rem;
-  padding: .5rem 0;
+  padding: 0.5rem ;
 }
 
 .about .row .content p {
@@ -271,6 +270,15 @@ h6, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
 .about .row .content .icons-container .icons span {
   font-size: 1.5rem;
   color: var(--black);
+}
+
+.textdeco{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  font-style: italic;
+  text-decoration-line: underline;
+  text-decoration-color: #C609E0;
+
 }
 
 .sub-heading {
