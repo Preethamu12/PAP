@@ -51,27 +51,14 @@ section{
 }
 .navbar-brand{margin-left: 15px;}
 
-.loader-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10000;
-  background: #fff;
+.book{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+background:#fff;
+margin:2rem 0;
+overflow: hidden;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
+border-radius: 1rem;
 
-.loader-container img {
-  width: 35rem;
-}
-
-.loader-container.fade-out {
-  top: -110%;
-  opacity: 0;
 }
 
 h6, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
@@ -456,7 +443,7 @@ h6, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
     color:var(--black);
     font-size: 2rem;
     padding-bottom: .5rem;
-    
+
 }
 
 .review .slide .user i{
@@ -467,4 +454,26 @@ h6, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
 #containersize{
   margin-left: 20px;
     margin-right: 10px;
+}
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.loader-container img {
+  width: 35rem;
+}
+
+.loader-container.fade-out {
+  top: -110%;
+  opacity: 0;
 }
