@@ -54,7 +54,7 @@ section{
 .navbar-light .navbar-nav .nav-link {
     color: rgb(53 149 105);}
 
-  
+
 
 .book{
   display: flex;
@@ -460,6 +460,11 @@ h6, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
   margin-left: 20px;
     margin-right: 10px;
 }
+
+.text-primary{text-decoration: auto;
+}
+
+
 .loader-container {
   position: fixed;
   top: 0;
