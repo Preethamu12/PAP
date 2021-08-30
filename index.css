@@ -51,6 +51,11 @@ section{
 }
 .navbar-brand{margin-left: 15px;}
 
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(53 149 105);}
+
+  
+
 .book{
   display: flex;
 background:#fff;
@@ -264,7 +269,7 @@ h6, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
   font-family: 'Lobster', cursive;
   font-style: italic;
   text-decoration-line: underline;
-  text-decoration-color: #C609E0;
+  text-decoration-color: #359569;
 
 }
 
