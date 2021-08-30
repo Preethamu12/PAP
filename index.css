@@ -54,7 +54,10 @@ section{
 .navbar-light .navbar-nav .nav-link {
     color: rgb(53 149 105);}
 
-
+.carousel-caption{
+      margin-bottom: 250px;
+      font-style: 35px;
+}
 
 .book{
   display: flex;
