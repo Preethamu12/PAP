@@ -413,7 +413,8 @@ h6, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
     padding: .8rem 3rem;
 }*/
 .review{
-  margin: 15px;
+
+  margin-top:70px;
 }
 
 .review .slide p{
@@ -455,6 +456,7 @@ h6, .price, .col-md-6, .col-12, .col-mt-6, .form-check {
     color:var(--black);
     font-size: 2rem;
     padding-bottom: .5rem;
+    
 }
 
 .review .slide .user i{
