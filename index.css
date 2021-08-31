@@ -91,8 +91,12 @@ h6, .price, .col-md-6, .col-12, .col-mt-6, .vid{
 >>>>>>> 0fccbf15dd5b9053ab284516e94ad4afe46e90cc
 =======
 
+<<<<<<< HEAD
 h6, .price, .col-md-6, .col-12, .col-mt-6, .vid{
 >>>>>>> fbc8da4457c7e40cff96a8d1955fba5c8ea19a57
+=======
+h6, .price, .col-md-6, .col-12, .col-mt-6, .men,.menu-item,.menu-container, .vid{
+>>>>>>> 83b565dd554b51f4bba4d94caee761867127c2ab
   text-align: center;
 }
 
