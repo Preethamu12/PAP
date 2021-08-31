@@ -58,6 +58,16 @@ section{
       margin-bottom: 250px;
       font-style: 35px;
 }
+.vide{
+  margin: 0;
+  bord
+}
+.video-fluid{
+
+  border-radius: 15px;
+  width:75%;
+
+}
 
 .book{
   display: flex;
@@ -69,7 +79,7 @@ border-radius: 1rem;
 
 }
 
-h6, .price, .col-md-6, .col-12, .col-mt-6 {
+h6, .price, .col-md-6, .col-12, .col-mt-6, .vid{
   text-align: center;
 }
 
