@@ -45,6 +45,7 @@ section{
 
 .navbar {
   /*border-radius: 15px;*/
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -63,7 +64,7 @@ section{
 
 }
 .video-fluid{
-
+  margin-top: 90px;
   border-radius: 15px;
   width:75%;
 
@@ -72,7 +73,7 @@ section{
 .book{
   display: flex;
 background:#fff;
-margin:2rem 0;
+margin:1rem 0;
 overflow: hidden;
 box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
 border-radius: 1rem;
