@@ -60,7 +60,11 @@ section{
 }
 .vide{
   margin: 0;
+<<<<<<< HEAD
   bord
+=======
+
+>>>>>>> fbc8da4457c7e40cff96a8d1955fba5c8ea19a57
 }
 .video-fluid{
 
@@ -80,10 +84,15 @@ border-radius: 1rem;
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 h6, .price, .col-md-6, .col-12, .col-mt-6 {
 =======
 h6, .price, .col-md-6, .col-12, .col-mt-6, .vid{
 >>>>>>> 0fccbf15dd5b9053ab284516e94ad4afe46e90cc
+=======
+
+h6, .price, .col-md-6, .col-12, .col-mt-6, .vid{
+>>>>>>> fbc8da4457c7e40cff96a8d1955fba5c8ea19a57
   text-align: center;
 }
 
