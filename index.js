@@ -107,3 +107,6 @@ function success() {
 function success1() {
   alert("Account Created!");
 }
+function thanks() {
+  alert("Thank you for the feedback!");
+}
