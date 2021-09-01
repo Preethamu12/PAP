@@ -92,3 +92,11 @@ var swiper = new Swiper(".review-slider", {
     },
   },
 });
+
+function myFunction() {
+  alert("Thank you for Booking the table at PAP Resto");
+}
+
+function added() {
+  alert("Added to the cart");
+}
