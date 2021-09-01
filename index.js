@@ -100,3 +100,10 @@ function myFunction() {
 function added() {
   alert("Added to the cart");
 }
+
+function success() {
+  alert("You've successfully logged in!");
+}
+function success1() {
+  alert("Account Created!");
+}
